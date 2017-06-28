@@ -1,1 +1,1 @@
-include ':cloud',':user'
+include ':cloud',':user',':web'
