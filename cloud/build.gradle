@@ -3,6 +3,7 @@ buildscript {
 		springBootVersion = '1.5.4.RELEASE'
 	}
 	repositories {
+		maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
 		mavenCentral()
 	}
 	dependencies {
@@ -18,6 +19,7 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
 repositories {
+	maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
 	mavenCentral()
 }
 
@@ -27,7 +29,7 @@ ext {
 }
 
 dependencies {
-	compile('org.springframework.cloud:spring-cloud-starter-eureka')
+	compile ('org.springframework.cloud:spring-cloud-starter-eureka-server')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 

@@ -1,0 +1,10 @@
+server:
+  port: 8760
+eureka:
+  instance:
+    hostname: discovery
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    service-url:
+      defaultZone: http://discovery:${server.port}/eureka/
